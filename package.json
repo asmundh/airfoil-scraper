@@ -1,0 +1,26 @@
+{
+  "name": "scripts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "scraper.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:scraper": "nodemon scraper.js --exec babel-node",
+    "start:transform": "nodemon transformer.js --exec babel-node",
+    "start:rename": "nodemon renamer.js --exec babel-node"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "x-ray": "^2.3.4",
+    "@babel/cli": "^7.6.2",
+    "@babel/core": "^7.6.2",
+    "@babel/node": "^7.6.2",
+    "@babel/polyfill": "^7.6.0",
+    "@babel/preset-env": "^7.6.2",
+    "nodemon": "^1.18.9",
+    "eslint": "^5.12.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0"
+  }
+}
