@@ -10,8 +10,10 @@ const readInterface = readline.createInterface({
 
 const file = fs.createWriteStream('links.txt');
 readInterface.on('line', ((line) => {
-  file.write(`http://airfoiltools.com/polar/text?polar=xf-${line}-100000-n5\n`);
+  file.write(`http://airfoiltools.com/polar/text?polar=xf-${line}-200000\n`);
 }));
+
+console.log('Wrote to links.txt');
 
 
 // trimmedLinks.forEach((trimmed) => {
